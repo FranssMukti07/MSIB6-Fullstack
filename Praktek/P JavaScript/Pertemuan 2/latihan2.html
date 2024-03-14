@@ -1,0 +1,35 @@
+<script>
+    var buah = ["pepaya", "mangga", "pisang", "jambu"];
+    buah[2] = "jeruk";
+
+    for (let i = 0; i < buah.length; i++) {
+        document.write("<br> " + buah[i]);
+    }
+</script>
+<script>
+    let p1 = {
+        nama: "Budi",
+        divisi: "SDM",
+        gaji: 7000000,
+    };
+    let p2 = {
+        nama: "Andi",
+        divisi: "Marketing",
+        gaji: 5000000,
+    };
+    let p3 = {
+        nama: "Ali",
+        divisi: "Lapangan",
+        gaji: 6000000,
+    };
+
+    let pegawai = [p1, p2, p3];
+    for (let i = 0; i < pegawai.length; i++) {
+        document.write("<br> " + pegawai[i]);
+    }
+    for (x of pegawai) {
+        document.write("<br> " + x.nama);
+        document.write("<br> " + x.divisi);
+        document.write("<br> " + x.gaji);
+    }
+</script>

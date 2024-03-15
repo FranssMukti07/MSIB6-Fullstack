@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JS Eksternal</title>
+        <script src="./script.js"></script>
+        <style>
+            /* Universal Styling */
+            body {
+                display: flex;
+                justify-content: space-evenly;
+                gap: 10px;
+            }
+            .header {
+                font-size: 25pt;
+            }
+            label {
+                padding: 10px;
+            }
+
+            /* Styling Tabel Form Input */
+            .tabelSoal {
+                width: 40%;
+                border: 1px solid black;
+                background-color: aquamarine;
+            }
+            .kolomInput {
+                padding: 5px;
+            }
+            .submitButton {
+                padding: 5px;
+            }
+            input {
+                width: 98%;
+            }
+
+            /* Styling Tabel Form Jawaban */
+            .tabelJawaban {
+                width: 40%;
+                border: 1px solid black;
+                background-color: aqua;
+            }
+            .kolomJawaban {
+                width: 60%;
+                background-color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <table class="tabelSoal" border="1">
+            <form action="" id="frm">
+                <thead>
+                    <tr>
+                        <th colspan="2" class="header">Form Input</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="">Nama Lengkap</label>
+                        </td>
+                        <td class="kolomInput">
+                            <input
+                                type="text"
+                                name="nama"
+                                id="nama"
+                                placeholder="Masukkan Nama Anda"
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">Pekerjaan</label>
+                        </td>
+                        <td class="kolomInput">
+                            <input
+                                type="text"
+                                name="pekerjaan"
+                                id="pekerjaan"
+                                placeholder="Masukkan Pekerjaan"
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">Hobby</label>
+                        </td>
+                        <td class="kolomInput">
+                            <input
+                                type="text"
+                                name="hobby"
+                                id="hobby"
+                                placeholder="Masukkan Hobby"
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="2" class="submitButton">
+                            <button type="button" onclick="dataForm()">
+                                Submit
+                            </button>
+                        </th>
+                    </tr>
+                </tbody>
+            </form>
+        </table>
+        <table class="tabelJawaban" border="1">
+            <thead>
+                <tr>
+                    <th class="header" colspan="2">Form Jawaban</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="">Nama Lengkap</label>
+                    </td>
+                    <td class="kolomJawaban">
+                        <p id="hasilNama"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Pekerjaan</label>
+                    </td>
+                    <td class="kolomJawaban">
+                        <p id="hasilPekerjaan"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Hobby</label>
+                    </td>
+                    <td class="kolomJawaban">
+                        <p id="hasilHobby"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2" class="resetButton">
+                        <button type="button">Reset</button>
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

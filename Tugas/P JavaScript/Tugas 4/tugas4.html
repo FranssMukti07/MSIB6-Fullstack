@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tugas 4 Pemrograman JavaScript</title>
+        <style>
+            #hasil {
+                margin-top: 3%;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            form {
+                display: flex;
+                justify-content: center;
+            }
+
+            button {
+                width: 100%;
+                background-color: orange;
+                
+            }
+
+            select {
+                width: 100%;
+            }
+
+            .inputTeks {
+                width: 97%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Form Data Pegawai</h1>
+        <form action="" id="formPegawai">
+            <table border="1">
+                <tr>
+                    <td><label for="">Nama Pegawai</label></td>
+                    <td>:</td>
+                    <td><input type="text" name="nama" id="nama" placeholder="Masukkan Nama" class="inputTeks"/></td>
+                </tr>
+                <tr>
+                    <td>Jabatan</td>
+                    <td>:</td>
+                    <td><select name="jabatan" id="jabatan"></select></td>
+                </tr>
+                <tr>
+                    <td>Status</td>
+                    <td>:</td>
+                    <td>
+                        <input
+                            type="radio"
+                            name="status"
+                            id="status"
+                            value="Belum Menikah"
+                        />Belum Menikah
+                        <input
+                            type="radio"
+                            name="status"
+                            id="status"
+                            value="Sudah Menikah"
+                        />Sudah Menikah
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gaji Pokok</td>
+                    <td>:</td>
+                    <td><input type="text" name="gajiPokok" placeholder="Nominal Gaji Pokok" class="inputTeks" disabled /></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <button type="button" onclick="result()">Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <table
+        border="1"
+        cellpadding="10"
+        cellspacing="0"
+        align="center"
+        id="hasil"
+        ></table>
+        <script src="script.js"></script>
+    </body>
+</html>

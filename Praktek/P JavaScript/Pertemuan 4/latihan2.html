@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Latihan 3 JS Eksternal</title>
+    </head>
+    <body>
+        <h1>Toko Online</h1>
+        <form action="" id="online">
+            <table border="0">
+                <tr>
+                    <td>
+                        <label for="">Nama Pelanggan</label>
+                    </td>
+                    <td>:</td>
+                    <td>
+                        <input type="text" name="nama" id="" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Nama Produk</label>
+                    </td>
+                    <td>:</td>
+                    <td>
+                        <select name="produk" id=""></select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Jumlah Produk</label>
+                    </td>
+                    <td>:</td>
+                    <td>
+                        <input type="number" name="jumlah" id="" min="0" />
+                    </td>
+                </tr>
+            </table>
+
+            <button
+                type="button"
+                name="proses"
+                id=""
+                value="Beli"
+                onclick="transaksi()"
+            >
+                Submit
+            </button>
+        </form>
+        <script src="toko.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </body>
+</html>

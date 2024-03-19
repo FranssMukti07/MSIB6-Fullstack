@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Latihan JS Eksternal 2</title>
+        <style>
+            * {
+                margin-top: 10px;
+            }
+
+            form {
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="" id="kal">
+            Angka 1 :
+            <input
+                type="text"
+                name="angka1"
+                id="angka1"
+                placeholder="Masukkan Angka Pertama"
+            /><br />
+            Angka 2 :
+            <input
+                type="text"
+                name="angka2"
+                id="angka2"
+                placeholder="Masukkan Angka Kedua"
+            /><br />
+            Hasil :
+            <input type="text" name="hasil" id="hasil" disabled /><br />
+            <button type="button" onclick="tambah()">+</button>
+            <button type="button" onclick="kurang()">-</button>
+            <button type="button" onclick="kali()">x</button>
+            <button type="button" onclick="bagi()">:</button>
+            <button type="button" onclick="pangkat()">^</button>
+            <button type="button" onclick="reset()">Reset</button>
+        </form>
+        <script src="calc.js"></script>
+    </body>
+</html>

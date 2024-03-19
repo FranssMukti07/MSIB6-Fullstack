@@ -25,7 +25,7 @@ const result = () => {
     } else {
         gapok = 5000000;
     }
-    frm.gajiPokok.value = gapok;
+    frm.gajiPokok.value = IDRupiah.format(gapok);
 
     tunjanganJabatan = 0.15 * gapok;
     bpjs = 0.1 * gapok;

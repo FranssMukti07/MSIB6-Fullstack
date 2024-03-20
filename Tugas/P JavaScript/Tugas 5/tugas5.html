@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tugas 5 Pemrograman JavaScript</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div id="div1">
+            <audio
+                controls
+                preload="auto"
+                src="audio/duck-quack-112941.mp3"
+                hidden
+                id="bebekSound"
+            ></audio>
+            Hewan Bebek
+        </div>
+        <div id="div2">
+            <audio
+                controls
+                preload="auto"
+                src="audio/cats-meow-81221.mp3"
+                hidden
+                id="kucingSound"
+            ></audio>
+            Hewan Kucing
+        </div>
+        <div id="div3">
+            <audio
+                controls
+                preload="auto"
+                src="audio/lion-roar-6011.mp3"
+                hidden
+                id="singaSound"
+            ></audio>
+            Hewan Singa
+        </div>
+
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script>
+            var suaraBebek = $("#bebekSound")[0];
+            var suaraKucing = $("#kucingSound")[0];
+            var suaraSinga = $("#singaSound")[0];
+
+            $("document").ready(function () {
+                $("#div1").mouseover(function () {
+                    suaraBebek.play();
+                    $(this).css({
+                        color: "black",
+                        background:
+                            "url('https://www.shutterstock.com/image-vector/cute-cartoon-rubber-duck-vector-600nw-2276837591.jpg')",
+                    });
+                });
+                $("#div1").mouseout(function () {
+                    suaraBebek.pause();
+                });
+                $("#div2").mouseover(function () {
+                    suaraKucing.play();
+                    $(this).css({
+                        color: "black",
+                        background:
+                            "url('https://main.mobile.doss.co.id/storage/uploads/2022/02/photo-1518791841217-8f162f1e1131.webp')",
+                    });
+                });
+                $("#div2").mouseout(function () {
+                    suaraKucing.pause();
+                });
+                $("#div3").mouseover(function () {
+                    suaraSinga.play();
+                    $(this).css({
+                        color: "whitesmoke",
+                        background:
+                            "url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Lion_waiting_in_Namibia.jpg/800px-Lion_waiting_in_Namibia.jpg')",
+                    });
+                });
+                $("#div3").mouseout(function () {
+                    suaraSinga.pause();
+                });
+                $("div").mouseout(function () {
+                    $(this).css({
+                        background: "green",
+                        color: "aqua",
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>

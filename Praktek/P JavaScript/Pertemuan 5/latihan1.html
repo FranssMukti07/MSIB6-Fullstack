@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Latihan jQuery</title>
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script>
+            $(document).ready(() => {
+                // Deklarasi untuk Selector Tag
+                $("input").click(() => {
+                    alert("Selamat Siang Sobat");
+                });
+
+                // Deklarasi untuk Penggunaan Class
+                $(".tes").css({
+                    "background-color": "orange",
+                    "text-align": "center",
+                });
+                // Deklarasi untuk Penggunaan ID
+                $("#tes").css({
+                    "background-color": "blue",
+                    "text-align": "center",
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <input type="submit" value="Salam" />
+        <p class="tes">ini adalah warna jeruk</p>
+        <p id="tes">ini adalah warna biru</p>
+    </body>
+</html>

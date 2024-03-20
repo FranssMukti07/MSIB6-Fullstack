@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Event Handler</title>
+        <link rel="stylesheet" href="css/style1.css" />
+    </head>
+    <body>
+        <div id="div1">Hewan Bebek</div>
+        <div id="div2">Hewan Kucing</div>
+        <div id="div3">Hewan Panda</div>
+
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script>
+            $("document").ready(function () {
+                $("#div1").mouseover(function () {
+                    $(this).css({
+                        background:
+                            "url('https://www.shutterstock.com/image-vector/cute-cartoon-rubber-duck-vector-600nw-2276837591.jpg')",
+                    });
+                });
+                $("#div2").mouseover(function () {
+                    $(this).css({
+                        background:
+                            "url('https://main.mobile.doss.co.id/storage/uploads/2022/02/photo-1518791841217-8f162f1e1131.webp')",
+                    });
+                });
+                $("#div3").mouseover(function () {
+                    $(this).css({
+                        background: "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ovvgJIfbdhd38wzIW2Ot5i78KVHgjyUKWhNL-iUGGg&s')",
+                    });
+                });
+                $("div").mouseout(function () {
+                    $(this).css({
+                        background: "green",
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,105 @@
+h1 {
+    color: #2d9596;
+    font-size: 50pt;
+}
+
+.navigasi {
+    color: darkblue;
+}
+
+.navigasi:hover {
+    color: whitesmoke;
+}
+
+.profile {
+    background-color: #ffe3ca;
+}
+
+img {
+    border-radius: 100%;
+    width: 250px;
+}
+
+.profile-title {
+    color: green;
+}
+
+legend {
+    color: #2d9596;
+    font-size: 20pt;
+}
+
+.home {
+    min-height: 350px;
+    width: 50%;
+    margin: 2% auto;
+}
+
+footer > a:hover {
+    color: white;
+}
+
+.contact {
+    min-height: 375px;
+    border: 5px solid;
+    border-color: #cf3f74 #13c921 #106bff #420897;
+}
+
+.sosmed {
+    border: 1px solid;
+}
+
+.ig {
+    color: #8a2387;
+}
+
+.ig:hover {
+    color: whitesmoke;
+    background: #8a2387;
+    background: -webkit-linear-gradient(to right, #f27121, #e94057, #8a2387);
+    background: linear-gradient(to right, #f27121, #e94057, #8a2387);
+}
+
+.fb {
+    color: #00c6ff;
+}
+
+.fb:hover {
+    color: whitesmoke;
+    background: #00c6ff;
+    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+}
+
+.wa {
+    color: #11998e;
+}
+
+.wa:hover {
+    color: whitesmoke;
+    background: #11998e;
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+    background: linear-gradient(to right, #38ef7d, #11998e);
+}
+
+.gh {
+    color: #0f2027;
+}
+
+.gh:hover {
+    color: whitesmoke;
+    background: #0f2027;
+    background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+    background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+}
+
+.lk {
+    color: #3a7bd5;
+}
+
+.lk:hover {
+    color: whitesmoke;
+    background: #3a7bd5;
+    background: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);
+    background: linear-gradient(to right, #3a6073, #3a7bd5);
+}

@@ -32,19 +32,17 @@ $ar_matkul = ['HTML', 'CSS3', 'JavaScript', 'UI/UX', 'PHP', 'Laravel', 'MySQL'];
                         <div class="mb-2">
                             <label for="inputKuliah" class="form-label fw-bold">Kampus Asal</label>
                             <select class="form-select" required name="kampus">
-                                <!-- <option selected disabled class="text-center"> =====>Choose One<===== </option> -->
-                                        <?php foreach ($ar_univ as $x) { ?>
-                                <option value="<?= $x ?>"><?= $x ?></option>
-                            <?php } ?>
+                                <?php foreach ($ar_univ as $x) { ?>
+                                    <option value="<?= $x ?>"><?= $x ?></option>
+                                <?php } ?>
                             </select>
                         </div>
                         <div class="mb-2">
                             <label for="inputMatkul" class="form-label fw-bold">Mata Kuliah</label>
                             <select class="form-select" required name="matkul">
-                                <!-- <option selected disabled class="text-center"> =====>Choose One<===== </option> -->
-                                        <?php foreach ($ar_matkul as $y) { ?>
-                                <option value="<?= $y ?>"><?= $y ?></option>
-                            <?php } ?>
+                                <?php foreach ($ar_matkul as $y) { ?>
+                                    <option value="<?= $y ?>"><?= $y ?></option>
+                                <?php } ?>
                             </select>
                         </div>
                         <div class="mb-2">

@@ -1,8 +1,9 @@
 Stored Procedures, Stored Functions dan Trigger
 Worksheet 6
 
-Nama	: Gigih Zhafrans Mukti Luhur
-Group   : 1 - Akhmad Arip
+Nama	    : Gigih Zhafrans Mukti Luhur
+Group       : 1 - Akhmad Arip
+Link Github : https://github.com/FranssMukti07/MSIB6-Fullstack/blob/main/Tugas/MySQL/Tugas%206/Tugas6.txt
 
 SOAL 6.1
 
